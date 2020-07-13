@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/style.css') }}">
+
+{% endblock %}
+
+{% block content %}
+
+<div class="all">
+    <div class="container">
+        <h1>Hello, I'm Prajwol Aryal and I am a developer.</h1>
+    </div>
+
+    <div class="projects">
+        <br>
+        <h1>Javascript Projects</h1><br><br><br>
+        <div class="container1">
+            <div class="image1">
+                <img src="{{ url_for('static', filename = 'Images/next.svg') }}" class="image12">
+            </div>
+            <div class="carousel">
+                <div class="carousel-slides">
+                    <a href="{{ url_for('tictactoe') }}">
+                        <img src="{{ url_for('static', filename = 'Images/Capture1.PNG') }}" width="490px"
+                            height="370px" style="margin-left: 19%;">
+                    </a>
+                    <a href="{{ url_for('rockpaperscissors') }}">
+                        <img src="{{ url_for('static', filename = 'Images/Capture2.PNG') }}" width="490px"
+                            height="370px" style="margin-left: 30%;">
+                    </a>
+                    <a href="https://github.com/Pj69420/Snake-Game-in-Python">
+                        <img src="{{ url_for('static', filename = 'Images/Capture3.PNG') }}" width="490px"
+                            height="370px" style="margin-left: 550px;">
+                    </a>
+                </div>
+            </div>
+            <div class="image2">
+                <img src="{{ url_for('static', filename = 'Images/next.svg') }}" class="image22">
+            </div>
+        </div>
+    </div>
+    <div class="current">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script src="{{ url_for('static', filename = 'JS/js1.js') }}"></script>
+
+{% endblock scripts %}

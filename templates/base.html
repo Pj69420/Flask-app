@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajwol Aryal</title>
+    {% block head %}
+
+    {% endblock %}
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+
+        <div class="logo">
+            <h1>Prajwol &nbsp;Aryal</h1>
+        </div>
+
+        <ul class="nav-items">
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="{{ url_for('about') }}">About Me</a></li>
+        </ul>
+        <div class="mobile">
+            <div class="l1"></div>
+            <div class="l2"></div>
+            <div class="l3"></div>
+        </div>
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer class="foot">
+            <p>&#169&nbsp;Prajwol&nbsp; Aryal&nbsp; 2020</p>
+            <a href="https://github.com/Pj69420"><span class="fab fa-github"></span></a>
+    </footer>
+
+    {% block scripts %}
+
+    {% endblock scripts %}
+
+</body>
+
+</html>

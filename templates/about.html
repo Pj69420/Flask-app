@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/styleAbout.css') }}">
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="all">
+    <div class="container">
+        <h1>Hello! My name is Prajwol Aryal and I am a 17<br> year old high school student from Nepal starting out to
+            become
+            a
+            full-stack
+            developer.</h1><br><br><br><br>
+        <h1>Languages I know:</h1><br><br>
+        <p>&#9755;&nbsp;Python
+        <p>
+        <p>&#9755;&nbsp;Javascript</p>
+        <p>&#9755;&nbsp;H.T.M.L</p>
+        <p>&#9755;&nbsp;C.S.S</p><br><br><br><br>
+        <h1>As I am still in a beginner stage, I have developed some basic games which are fairly easy to code using
+            Javascript and Python. You can play with the Python project as the code is available on Github. The
+            Javascript
+            projects (Tic-tac-toe, Rock Paper Scissors) can be played with the browser obviously as they are deveoped
+            using
+            H.T.M.L, C.S.S and Javascript.</h1><br>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script src="{{ url_for('static', filename = 'JS/jsAbout.js') }}"></script>
+
+{% endblock scripts %}

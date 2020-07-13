@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'CSS/styleRPS.css') }}">
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="head">
+        <div class="heading">
+            <h1>Welcome to Rock Paper Scissors!</h1>
+        </div>
+        <div class="score">
+            <div class="score-player">
+                <h1>Player</h1>
+                <p>0</p>
+            </div>
+            <div class="score-computer">
+                <h1>Computer</h1>
+                <p>0</p>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="match">
+        <h1>Play!</h1>
+        <div class="image">
+            <div class="image1">
+            </div>
+            <div class="image2">
+            </div>
+        </div>
+        <div class="btn">
+            <button onclick="rockButton()">Rock</button>
+            <button onclick="paperButton()">Paper</button>
+            <button onclick="scissorButton()">Scissor</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script src="{{ url_for('static', filename = 'JS/RPS.js')}}"></script>
+
+{% endblock scripts %}
+
+</body>
+
+</html>
